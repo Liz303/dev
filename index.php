@@ -12,7 +12,18 @@ Nulla ac mollis ligula. Donec non metus dui, nec auctor urna. Sed at blandit urn
 
 
 <?php 
-	print '<h1>Ian\'s Super Cool Section</h1>';
+
+	// Print html for Ian's section
+	print '<h1>Ian\'s Section</h1>';
+
+	// Loop 10 times
+	for( $i = 0; $i < 10; $i = $i + 1 ) {
+
+		// Print something
+		print '<p>Loop ' . $i . '</p>';
+
+	}
+
 ?>
 
   <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
