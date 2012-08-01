@@ -12,7 +12,7 @@ Nulla ac mollis ligula. Donec non metus dui, nec auctor urna. Sed at blandit urn
 
 
 <?php 
-	print '<h1>Ian's Super Cool Section</h1>';
+	print '<h1>Ian\'s Super Cool Section</h1>';
 ?>
 
   <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
