@@ -17,10 +17,10 @@ Nulla ac mollis ligula. Donec non metus dui, nec auctor urna. Sed at blandit urn
 	print '<h1>Ian\'s Section</h1>';
 
 	// Loop 10 times
-	for( $i = 0; $i < 10; $i = $i + 1 ) {
+	for( $i = 0; $i < 10; $i++ ) {
 
 		// Print something
-		print '<p>Loop ' . $i . '</p>';
+		print "<p>Loop $i</p>";
 
 	}
 
