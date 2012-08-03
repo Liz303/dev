@@ -1,24 +1,38 @@
 <!doctype html>
 <head>
   <meta charset="utf-8">
-
 </head>
 <body>
 
-<h1>My Page of Awesome</h1>
-
-
-
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sit amet erat sit amet erat blandit faucibus at eleifend nisi. Aliquam erat volutpat. Sed vestibulum, purus nec feugiat lobortis, nisl lacus scelerisque quam, a veolor aliquet lorem, sit amet fringilla purus neque quis mi. Vivamus fermentum lobortis dolor at cursus. Quisque facilisis metus vulputate dui dapibus porta.
-
-Nulla ac mollis ligula. Donec non metus dui, nec auctor urna. Sed at blandit urna. Phasellus gravida orci quis mauris convallis quis faucibus ante faucibus. Donec et nisi leo, id sodales nibh. Aliquam erat volutpat. Nam adipiscing augue sapien. Donec eget dolor ligula. </p>
-
-
-<p>Here's Ian's edits and more</p>
-
-
-
 <?php 
+
+	$array = array(
+		"Ian" => array(
+			"Veggie" => "Carrot",
+			"Fruit" => "Banana",
+		),
+		"Frank" => array(
+			"Veggie" => "Celery",
+			"Fruit" => "Squash",
+		),
+		"Liz" => array(
+			"Veggie" => "Green Pepper",
+			"Fruit" => "Kiwi",
+		),
+	);
+
+	foreach($array as $person => $food) {
+
+		print "<h1>$person likes the following:</h1>";
+		
+		// Loop through the person's favorite foods
+		foreach($food as $type => $name) {
+
+			print "<h2>$name</h2>";
+			
+		}
+
+	}
 
 ?>
 
