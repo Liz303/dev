@@ -7,9 +7,17 @@
 <?php 
 
 	include "blog_posts.inc";
+	//print_r($blog_posts);
+	foreach($blog_posts as $content) {
 	
-	print_r($blog_posts);
+	
+		print '<h1>' . $content->title . '</h1>';
+		print '<p>' . $content->body . '</p>';
+		
+		
+	}
 
+	
 ?>
 
   <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
