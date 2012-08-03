@@ -11,7 +11,7 @@
 Nulla ac mollis ligula. Donec non metus dui, nec auctor urna. Sed at blandit urna. Phasellus gravida orci quis mauris convallis quis faucibus ante faucibus. Donec et nisi leo, id sodales nibh. Aliquam erat volutpat. Nam adipiscing augue sapien. Donec eget dolor ligula. </p>
 
 
-<p>Here's Ian's edits</p>
+<p>Here's Ian's edits and more</p>
 
 
 <?php 
