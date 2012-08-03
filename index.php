@@ -6,33 +6,9 @@
 
 <?php 
 
-	$array = array(
-		"Ian" => array(
-			"Veggie" => "Carrot",
-			"Fruit" => "Banana",
-		),
-		"Frank" => array(
-			"Veggie" => "Celery",
-			"Fruit" => "Squash",
-		),
-		"Liz" => array(
-			"Veggie" => "Green Pepper",
-			"Fruit" => "Kiwi",
-		),
-	);
-
-	foreach($array as $person => $food) {
-
-		print "<h1>$person likes the following:</h1>";
-		
-		// Loop through the person's favorite foods
-		foreach($food as $type => $name) {
-
-			print "<h2>$name</h2>";
-			
-		}
-
-	}
+	include "blog_posts.inc";
+	
+	print_r($blog_posts);
 
 ?>
 
