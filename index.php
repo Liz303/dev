@@ -11,18 +11,10 @@
 Nulla ac mollis ligula. Donec non metus dui, nec auctor urna. Sed at blandit urna. Phasellus gravida orci quis mauris convallis quis faucibus ante faucibus. Donec et nisi leo, id sodales nibh. Aliquam erat volutpat. Nam adipiscing augue sapien. Donec eget dolor ligula. </p>
 
 
+<p>Make some changes here Brandon</p>
+
+
 <?php 
-
-	// Print html for Ian's section
-	print '<h1>Ian\'s Section</h1>';
-
-	// Loop 10 times
-	for( $i = 0; $i < 10; $i++ ) {
-
-		// Print something
-		print "<p>Loop $i</p>";
-
-	}
 
 ?>
 
