@@ -6,12 +6,16 @@
 <body>
 
 <h1>My Page of Awesome</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sit amet erat sit amet erat blandit faucibus at eleifend nisi. Aliquam erat volutpat. Sed vestibulum, purus nec feugiat lobortis, nisl lacus scelerisque quam, a vestibulum tellus diam sed arcu. Nunc non accumsan ligula. Donec ut tortor id tellus vulputate viverra. Sed sit amet sollicitudin lorem. Donec vehicula lobortis elit ut venenatis. Donec consequat, nisl sit amet molestie fringilla, felis dolor aliquet lorem, sit amet fringilla purus neque quis mi. Vivamus fermentum lobortis dolor at cursus. Quisque facilisis metus vulputate dui dapibus porta.
+
+
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sit amet erat sit amet erat blandit faucibus at eleifend nisi. Aliquam erat volutpat. Sed vestibulum, purus nec feugiat lobortis, nisl lacus scelerisque quam, a veolor aliquet lorem, sit amet fringilla purus neque quis mi. Vivamus fermentum lobortis dolor at cursus. Quisque facilisis metus vulputate dui dapibus porta.
 
 Nulla ac mollis ligula. Donec non metus dui, nec auctor urna. Sed at blandit urna. Phasellus gravida orci quis mauris convallis quis faucibus ante faucibus. Donec et nisi leo, id sodales nibh. Aliquam erat volutpat. Nam adipiscing augue sapien. Donec eget dolor ligula. </p>
 
 
 <p>Here's Ian's edits and more</p>
+
 
 
 <?php 
