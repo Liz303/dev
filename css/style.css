@@ -1,0 +1,5 @@
+body { background: aqua; }
+
+.container { height: 400px; background: yellow; }
+.container .inner { width: 200px; margin: 0 auto; background: green; }
+.container .inner h3 { color: gray; text-transform: uppercase; }
