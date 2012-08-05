@@ -5,7 +5,8 @@
 </head>
 <body>
 
-
+<div class="container">
+	<div class="inner">
 <?php 
 
 	include "blog_posts.inc";
@@ -23,9 +24,6 @@
 	
 ?>
 
-<div class="container">
-	<div class="inner">
-		<h3>Liz was here</h3>
 	</div>
 </div>
 
