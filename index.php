@@ -7,6 +7,7 @@
 
 <div class="container">
 	<div class="inner">
+	
 <?php 
 
 	include "blog_posts.inc";
@@ -14,8 +15,8 @@
 	foreach($blog_posts as $content) {
 	
 	
-		print '<h1>' . $content->title . '</h1>';
-		print '<p>' . $content->body . '</p>';
+		print '<h1>' . $content->title . '</h1> ';
+		print '<p> <blockquote>' . $content->body . '</p></blockquote>';
 		
 		
 	}
