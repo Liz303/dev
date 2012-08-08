@@ -27,7 +27,7 @@ foreach ($highScore as $score) {
 */
 
 //associative arrays
-$traits = array('hairy'=>'having a long furry pelt', 'curious'=>'pertaining to an exploratory nature, driven by wonderment', 'fish'=> 'a thing I wasted my money on and now it won\'t die');
+/* $traits = array('hairy'=>'having a long furry pelt', 'curious'=>'pertaining to an exploratory nature, driven by wonderment', 'fish'=> 'a thing I wasted my money on and now it won\'t die');
 
 foreach ($traits as $word => $description) {
 	
@@ -35,7 +35,36 @@ foreach ($traits as $word => $description) {
 }
 
 //to get a value from the above array I can
-print $traits['hairy']. "<br />";
+print $traits['hairy']. "<br />"; 
+*/
+
+$newAnimals = array(
+		(object) array(
+			"head" => "Monkey",
+			"body" => "Tiger",
+		),
+		(object) array(
+			"head" => "Ostrich",
+			"body" => "Camel",
+		),
+		(object) array(
+			"head" => "Lion",
+			"body" => "Dolphin",
+
+		),
+	);
+	
+	$newAnimals = (object) $newAnimals;
+	//ask Ian what this line is doing
+	//also ask ian about objects
+$newAnimals = (object) $newAnimals;
+
+foreach($newAnimals as $animal) {
+	
+	print '<h1>' . $animal->head ." ". $animal->body .'</h1>';
+	
+}
+
 ?> 
 
   <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
