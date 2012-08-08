@@ -13,10 +13,12 @@
 	include "blog_posts.inc";
 	//print_r($blog_posts);
 	foreach($blog_posts as $content) {
-	
+		
+		print '<div class="blogpost">';
 		print '<h3>' . $content->title . '</h3> ';
 		print '<p> <blockquote>' . $content->body . '</p></blockquote>';
-		print '<br />';
+		print '</div>';
+	
 		
 		
 	}
