@@ -6,7 +6,7 @@
 <body>
 
 <div class="container">
-	<div class="inner">
+<div class='inner'>
 	
 <?php 
 
@@ -14,9 +14,9 @@
 	//print_r($blog_posts);
 	foreach($blog_posts as $content) {
 	
-	
-		print '<h1>' . $content->title . '</h1> ';
+		print '<h3>' . $content->title . '</h3> ';
 		print '<p> <blockquote>' . $content->body . '</p></blockquote>';
+		print '<br />';
 		
 		
 	}
@@ -24,8 +24,8 @@
 
 	
 ?>
-
-	</div>
+</div>
+	
 </div>
 
 
