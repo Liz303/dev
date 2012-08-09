@@ -1,9 +1,10 @@
 /*----------- Vars ------------ */
 /*----------- Main styling ------------ */
-body { background: aqua; }
+body { background: black; }
 
-.container { height: 400px; background: yellow; }
-.container:hover { background: fuchsia; }
-.container .inner { width: 600px; margin: 0 auto; padding: 16px; background: #3bbfce; -webkit-box-shadow: red 2px 2px 10px; -moz-box-shadow: red 2px 2px 10px; box-shadow: red 2px 2px 10px; }
-.container .inner h3 { color: white; text-transform: uppercase; font-size: 100px; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100); opacity: 1; -webkit-transition: 1s; -moz-transition: 1s; -o-transition: 1s; transition: 1s; }
+.container { height: 100%; background: black; }
+.container .inner { width: 800px; margin: 50px auto; padding: 16px; background: white; -webkit-box-shadow: #3bbfce 2px 2px 10px; -moz-box-shadow: #3bbfce 2px 2px 10px; box-shadow: #3bbfce 2px 2px 10px; }
+.container .inner h3 { color: #3bbfce; text-transform: uppercase; font-size: 70px; padding: 0px; margin: 0px; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100); opacity: 1; -webkit-transition: 1s; -moz-transition: 1s; -o-transition: 1s; transition: 1s; }
+.container .inner h3 .has-custom-shadow { text-shadow: rgba(0, 0, 255, 0.2) 1px 1px 0, rgba(0, 0, 255, 0.2) 2px 2px 0, rgba(0, 0, 255, 0.2) 3px 3px 0; }
 .container .inner h3:hover { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30); opacity: 0.3; color: black; cursor: pointer; }
+.container .blogpost { width: 700px; margin: 0 auto; background: grey; border-radius: 15px; padding: 10px; margin: 10px; }
