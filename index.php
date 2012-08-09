@@ -1,8 +1,7 @@
 <!doctype html>
 <head>
   <meta charset="utf-8">
-  <link href="css/bootstrap-responsive.css" rel="stylesheet" type="text/css">
-   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 
@@ -14,21 +13,11 @@
 	include "blog_posts.inc";
 	//print_r($blog_posts);
 	foreach($blog_posts as $content) {
-	
-	// Init some var
-	
-	$blog_title = $content->title;
-	$blog_body = $content-> body;
-	
-	$html = "
-		<div class =\"blogpost\">
-			<h3> $blog_title </h3>
-			<p> $blog_body </p>
-		</div>
-	
-	";
 		
-		print $html;
+		print '<div class="blogpost">';
+		print '<h3>' . $content->title . '</h3> ';
+		print '<p> <blockquote>' . $content->body . '</p></blockquote>';
+		print '</div>';
 	
 		
 		
