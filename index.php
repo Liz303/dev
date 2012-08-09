@@ -35,6 +35,7 @@
 			
 			$blog_title = $content->title;
 			$blog_body = $content-> body;
+			$blog_body_cut = substr( $blog_body, 0, 200);
 			
 			$html = "
 				<div class =\"span6\">
@@ -42,7 +43,7 @@
 						<div class=\"page-header\">
 							<h3> $blog_title </h3>
 						</div>
-						<p> $blog_body </p>
+						<p> $blog_body_cut </p>
 					</div>
 				</div>
 			
