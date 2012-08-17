@@ -1,5 +1,8 @@
 
 <?php 
+/* Check to see if number i is prime
+
+*/
 
 //Init
 $start = microtime();
