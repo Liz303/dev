@@ -26,11 +26,7 @@
 
 		<?php 
 
-<<<<<<< HEAD
-		
-=======
 			// Include the blog posts from file
->>>>>>> 402c8ec30d21fbed7dfcd5aabe3620a59f2ebe22
 			include "blog_posts.inc";
 
 			// Loop through blog posts
