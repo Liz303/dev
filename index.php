@@ -26,33 +26,66 @@
 
 		<?php 
 
+<<<<<<< HEAD
 		
+=======
+			// Include the blog posts from file
+>>>>>>> 402c8ec30d21fbed7dfcd5aabe3620a59f2ebe22
 			include "blog_posts.inc";
-			//print_r($blog_posts);
+
+			// Loop through blog posts
 			foreach($blog_posts as $content) {
-			
-			// Init some var
-			
-			$blog_title = $content->title;
-			$blog_body = $content-> body;
-			$blog_body_cut = substr( $blog_body, 0, 200);
-			
-			$html = "
-				<div class =\"span6\">
-					<div class=\"well\">
-						<div class=\"page-header\">
-							<h3> $blog_title </h3>
-						</div>
-						<p> $blog_body_cut </p>
-					</div>
-				</div>
-			
-			";
-				
-				print $html;
-			
-				
-				
+
+				// If the blog post is published
+				if (
+					($content->published === TRUE || $content->published === "yes") &&
+					$content->body !== ""
+				) {
+
+					// Init				
+					$blog_title = $content->title;
+					$blog_body = $content-> body;
+					$blog_body_cut = substr( $blog_body, 0, 200);
+	
+					// Build HTML
+					$html = "
+						<div class =\"span6\">
+							<div class=\"well\">
+								<div class=\"page-header\">
+									<h3> $blog_title </h3>
+								</div>
+								<p> $blog_body_cut </p>
+							</div>
+						</div>	
+					";
+	
+					// Print HTML
+					print $html;
+					
+					
+				} elseif (
+					($content->published === TRUE || $content->published === "yes") &&
+					$content->body === ""
+				) {
+					
+					// Build HTML
+					$html = "
+						<div class =\"span6\">
+							<div class=\"well\">
+								<div class=\"page-header\">
+									<h3> $blog_title </h3>
+								</div>
+								<p> NO BODY </p>
+							</div>
+						</div>	
+					";
+	
+					// Print HTML
+					print $html;
+					
+				}
+
+
 			}
 		
 		
