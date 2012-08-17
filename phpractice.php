@@ -38,7 +38,7 @@ foreach ($traits as $word => $description) {
 print $traits['hairy']. "<br />"; 
 */
 
-$newAnimals = array(
+/*$newAnimals = array(
 		(object) array(
 			"head" => "Monkey",
 			"body" => "Tiger",
@@ -63,6 +63,38 @@ foreach($newAnimals as $animal) {
 	
 	print '<h1>' . $animal->head ." ". $animal->body .'</h1>';
 	
+}
+
+*/
+
+//Init
+
+$k=$n%$i;
+
+
+for ($n=2; $n<10000; $n++)
+
+{
+
+$count=0;
+
+for($i=2; $i<$n-1; $i++)
+
+{
+
+
+
+
+if ($k==0)
+
+$count++;
+
+}
+
+if ($count==0)
+
+echo "$n <br />";
+
 }
 
 ?> 
