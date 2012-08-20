@@ -21,7 +21,7 @@
 		(object) array(
 			"title" => "Just another blog post",
 			"featured" => TRUE,
-			"published" => "no",
+			"published" => "yes",
 			"body" => "Strip steak venison pancetta ball tip flank ham hock chicken. Bresaola cow chicken jowl pork boudin turducken. Pork shankle meatloaf turkey jerky ball tip tail beef ribs pork belly shank salami pastrami. Shank hamburger pig tenderloin pastrami salami. Ribeye ground round boudin spare ribs drumstick, prosciutto corned beef andouille brisket tenderloin bresaola jowl hamburger chicken meatloaf. Sausage turkey prosciutto, brisket capicola salami chicken shoulder cow turducken.",
 			"image_path" => "img/image03.jpg",
 		),

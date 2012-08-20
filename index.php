@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/bootstrap-responsive.css" rel="stylesheet" type="text/css">
-  
+    <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 
@@ -26,13 +26,16 @@
 
 		<?php 
 
-			// Include the blog posts from file
+			//Include the blog posts from file
 			include "blog_posts.inc";
+			
+			// Init
+			$featured_html = '';
 
-			// Loop through blog posts
+			//Loop through blog posts
 			foreach($blog_posts as $content) {
 
-				// If the blog post is published
+				//If the blog post is published
 				if (
 					($content->published === TRUE || $content->published === "yes") &&
 					$content->body !== ""
@@ -42,21 +45,41 @@
 					$blog_title = $content->title;
 					$blog_body = $content-> body;
 					$blog_body_cut = substr( $blog_body, 0, 200);
-	
-					// Build HTML
-					$html = "
-						<div class =\"span6\">
-							<div class=\"well\">
-								<div class=\"page-header\">
-									<h3> $blog_title </h3>
+					$img = $content->image_path;
+					$featured = $content->featured;
+					
+					//Check if the content is featured
+					if ( $featured === TRUE ){
+						
+						$featured_html = "
+							<div class =\"span12\">
+								<div class=\"well\">
+									<div class=\"page-header\">
+										<h3> $blog_title </h3>
+									</div>
+									<p> $blog_body_cut </p>
+									<img src=\"$img\" />
 								</div>
-								<p> $blog_body_cut </p>
-							</div>
+							</div>			
+						";
+					}
+					
+					// Build HTML
+					$html .= "
+					
+						<div class =\"span6 img-wrap\">
+							<img src=\"$img\" />
+								<div class=\"title-body\">
+									<div class=\"page-header\">
+										<h3> $blog_title </h3>
+										</div>
+										<p> $blog_body_cut </p>
+								</div>
+							
 						</div>	
 					";
 	
-					// Print HTML
-					print $html;
+					
 					
 					
 				} elseif (
@@ -84,6 +107,8 @@
 
 			}
 		
+			// Print HTML
+			print $featured_html . $html; 
 		
 		?>
 

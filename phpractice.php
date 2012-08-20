@@ -68,10 +68,6 @@ foreach($newAnimals as $animal) {
 */
 
 //Init
-
-$k=$n%$i;
-
-
 for ($n=2; $n<10000; $n++)
 
 {
@@ -83,7 +79,7 @@ for($i=2; $i<$n-1; $i++)
 {
 
 
-
+$k=$n%$i;
 
 if ($k==0)
 
